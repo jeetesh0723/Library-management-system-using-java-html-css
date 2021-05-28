@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* The image used */
+ margin: 0;
+    padding: 0;
+    background: url(admin2.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: blue;
+  color: white;
+  font-size: 1.1em;
+  padding: 10px 40px;
+  border: 3;
+  cursor: pointer;
+  width: 33%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.navbar {
+  overflow: hidden; /* Hide overflow */
+  background-color: #333; /* Dark background color */
+}
+/* Style the navigation bar links */
+.navbar a {
+  float: left; /* Make sure that the links stay side-by-side */
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 14px 20px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+}
+.navbar a.right {
+  float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+  background-color: #ddd; /* Grey background color */
+  color: black; /* Black text color */
+}
+
+</style>
+<body>
+<!-- Navigation -->
+<nav class="navbar">
+  <a href="Homemain.html" class="w3-button w3-bar-item">Home</a>
+  <a href="About.html" class="w3-button w3-bar-item">About</a>
+  <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+  <a href="adminlogin.html"  class="w3-button w3-bar-item" style=" float: right; ">Logout</a>
+</nav>
+
+<!-- Navigation -->
+<nav class="navbar">
+  
+  <button onClick="parent.location='AddLib.html'" type="button" class="btn" style="Font-Family:Lucida Handwriting;">Add librarian</button>
+  <button onClick="parent.location='viewlib.jsp'" type="button" class="btn" style="Font-Family:Lucida Handwriting;">View Librarian</button>
+  <button onClick="parent.location='borrowd.jsp'" type="button" class="btn" style="Font-Family:Lucida Handwriting;">Borrow Details</button>
+</nav>
+
+<div class="bg-img">
+
+<div style="overflow:hidden;">
+<h1 style="text-align:center;color:cyan;padding: 0px 30px;Font-Family:ALGERIAN; Font-size:40px;"><b><i>Admin Section</i></b></h1>
+   </div>
+  
+</div>
+</body>
+</html>

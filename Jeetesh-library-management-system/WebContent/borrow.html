@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /* The image used */
+   margin: 0;
+    padding: 0;
+    background: url(admin2.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 30%;
+  margin: 20px;
+  max-width: 500px;
+  height: 850px;
+  padding: 16px;
+   background-color: transparent;  
+  
+}
+
+#stu_n{
+  width: 100%;
+  padding: 20px;
+  margin: 10px 0 40px 0;
+  border: 2;
+  background: lite;
+}
+#st_name{
+  width: 100%;
+  padding: 20px;
+  margin: 10px 0 40px 0;
+  border: 2;
+  background: lite;
+}
+#last{
+  width: 100%;
+  padding: 20px;
+  margin: 10px 0 40px 0;
+  border: 2;
+  background: lite;
+}
+#cou{
+  width: 100%;
+  padding: 20px;
+  margin: 10px 0 40px 0;
+  border: 2;
+  background: lite;
+}
+#year{
+  width: 100%;
+  padding: 20px;
+  margin: 10px 0 40px 0;
+  border: 2;
+  background: lite;
+}
+#lib_id{
+  width: 100%;
+  padding: 20px;
+  margin: 10px 0 40px 0;
+  border: 2;
+  background: lite;
+}
+#bo_id{
+  width: 100%;
+  padding: 20px;
+  margin: 10px 0 40px 0;
+  border: 2;
+  background: lite;
+}
+#bo_tit{
+  width: 100%;
+  padding: 20px;
+  margin: 10px 0 40px 0;
+  border: 2;
+  background: lite;
+}
+#iss_dat{
+  width: 100%;
+  padding: 20px;
+  margin: 10px 0 40px 0;
+  border: 2;
+  background: lite;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: blue;
+  color: white;
+  padding: 16px 20px;
+  border: 10;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.bbtn{
+background-color: red;
+  color: white;
+  padding: 10px 10px;
+  border: 10;
+  cursor: pointer;
+  width: 20%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.btn {
+  background-color: blue;
+  color: white;
+  font-size: 1.1em;
+  padding: 10px 40px;
+  border: 3;
+  cursor: pointer;
+  width: 33%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.navbar {
+  overflow: hidden; /* Hide overflow */
+  background-color: #333; /* Dark background color */
+}
+/* Style the navigation bar links */
+.navbar a {
+  float: left; /* Make sure that the links stay side-by-side */
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 14px 20px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+}
+.navbar a.right {
+  float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+  background-color: #ddd; /* Grey background color */
+  color: black; /* Black text color */
+  }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+  <a href="Homemain.html" class="w3-button w3-bar-item">Home</a>
+  <a href="About.html" class="w3-button w3-bar-item">About</a>
+  <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+  <a href="Home.html"  class="w3-button w3-bar-item" style=" float: right; ">Logout</a>
+</nav>
+
+<!-- Navigation -->
+<nav class="navbar">
+<button onClick="parent.location='borrow.html'" type="button" class="btn" style="Font-Family:Lucida Handwriting;">Borrow</button>
+<button onClick="parent.location='return.jsp'"  type="button" class="btn" style="Font-Family:Lucida Handwriting;">Return</button>
+<button onClick="parent.location='borrowd.jsp'" type="button" class="btn" style="Font-Family:Lucida Handwriting;">Borrow Details</button>
+</nav>
+
+<form   action="borrow.jsp" method="post" >
+<div class="bg-img">
+  <div class="container">
+    <h1 style="color:Yellow;Font-Family:Algerian;">Fill student and book details</h1>
+    <hr>
+    <label for="stu_n" style="Font-Family:Kristen ITC; color:white;"><b>Student Id</b></label>
+    <input type="text" placeholder="Student_id" id="stu_n" value="" name="stu_n" required>
+    
+    <label for="name" style="Font-Family:Kristen ITC; color:white; "><b>Student Name</b></label>
+    <input type="text" placeholder="student_name" id="st_name" value="" name="st_name" required>
+
+    <label for="last_name" style="Font-Family:Kristen ITC; color:white; left:100px;"><b>Last name</b></label>
+    <input type="text" placeholder="Last_name" id="last" value="" name="last" required>
+
+    <label for="course" style="Font-Family:Kristen ITC; color:white;"><b>Course Name</b></label>
+    <input type="text" placeholder="course"  id="cou" value="" name="cou" required>
+
+    <label for="year" style="Font-Family:Kristen ITC; color:white;"><b>Course Year</b></label>
+    <input type="text" placeholder="Year" id="year" value="" name="year" required>
+    
+    <label for="lib_id" style="Font-Family:Kristen ITC; color:white;"><b>Librarian Id</b></label>
+    <input type="text" placeholder="lib_id" id="lib_id" value="" name="lib_id"required>
+    
+    <label for="book_id"style="Font-Family:Kristen ITC; color:white;"><b>Book Id</b></label>
+    <input type="text" placeholder="book_id" id="bo_id" value="" name="bo_id"required>
+    
+    <label for="book_title" style="Font-Family:Kristen ITC; color:white;"><b>Book Title</b></label>
+    <input type="text" placeholder="book_title" id="bo_tit" value="" name="bo_tit"required>
+    
+    <label for="Issue_date" style="Font-Family:Kristen ITC; color:white;"><b>Issue Date</b></label>
+    <input type="date" placeholder="Issue_Date" id="iss_dat" value="" name="iss_dat"required>
+    <br>
+    <br>
+
+    <hr>
+    <button type="submit" class="btn" style="Font-Family:Lucida Handwriting;">Borrow</button>
+    <br>
+    <br>
+    <button onClick="parent.location='libra.html'" type="button" class="bbtn" style="Font-Family:Lucida Handwriting;">Cancel</button>
+
+  </div>
+  
+  </div>
+</form>
+</body>
+</html>

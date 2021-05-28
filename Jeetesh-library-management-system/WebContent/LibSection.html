@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("library.jpg");
+
+  min-height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 40%;
+  margin: 20px;
+  max-width: 600px;
+  height:400px;
+  padding: 50px;
+  background-color: white;
+
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: blue;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+.adbtn{
+background-color: red;
+  color: white;
+  position:absolute;
+  right: 0;
+  padding: 16px 20px;
+  cursor: pointer;
+  width: 30%;
+  }
+</style>
+</head>
+<body>
+
+<h1 style="text-align:center;color:blue">Librarian Section</h1>
+<div class="bg-img">
+  <form action="/action_page.php" class="container">
+  <button type="button" class="btn">Add Books</button>
+  <br>
+  <br>
+  <button type="button" class="btn">Issue Book</button>
+  <br>
+  <br>
+  <button type="button" class="btn">View issued books</button>
+  <br>
+  <br>
+  <button type="button" class="btn">Return books</button>
+  <br>
+  <br>
+    <button onClick="parent.location='Home.html'" type="button" class="btn">Logout</button>
+  </form>
+</div>
+</body>
+</html>

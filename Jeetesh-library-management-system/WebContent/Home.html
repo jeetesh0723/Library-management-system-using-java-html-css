@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  /* The image used */
+  margin: 0;
+    padding: 0;
+    background: url(homeim.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+/* Add styles to the form container */
+.container {
+  
+  position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 500px;
+	height: 500px;
+	padding: 5px 40px;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+ border: none;
+	border-bottom: 1px solid #fff;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	margin: 10px;
+	width: 100%;
+	color: #fff;
+	font-size: 16px;
+
+}
+label {
+	cursor: pointer;
+	color: white;
+	display: block;
+	padding: 10px;
+	margin: 3px;
+}
+
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: black;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: blue;
+  color: white;
+  padding: 16px 20px;
+  border: 40%;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius:10px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+.adbtn{
+background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: 20;
+  cursor: pointer;
+  width: 30%;
+  opacity: 0.6;
+}
+
+.navbar {
+  overflow: hidden; /* Hide overflow */
+  background-color: #333; /* Dark background color */
+}
+/* Style the navigation bar links */
+.navbar a {
+  float: left; /* Make sure that the links stay side-by-side */
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 14px 20px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+}
+.navbar a.right {
+  float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+  background-color: #ddd; /* Grey background color */
+  color: black; /* Black text color */
+}
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 46px;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+</style>
+</head>
+<body>
+<div class="sidenav">
+  <a href="adminlogin.html" style="Font-Family:Algerian;">Admin Login</a>
+</div>
+
+<!-- Navigation -->
+<nav class="navbar">
+  <a href="Homemain.html" class="w3-button w3-bar-item">Home</a>
+  <a href="About.html" class="w3-button w3-bar-item">About</a>
+  <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+</nav>
+  <form action="Home.jsp" class="container" method="post">
+  
+  <div class="login-box">
+    <h1 style="color:yellow;Font-Family:Algerian;">Librarian login</h1>
+    <label for="email" style="Font-Family:Kristen ITC;"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" id="uname" name="uname" required>
+    <label for="psw" style="Font-Family:Kristen ITC;"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" id="pass" name="pass" required>
+    <br>
+    <br>
+    <br>
+    <br>
+    <button type="submit" class="btn" style="Font-Family:Lucida Handwriting;">Login</button>
+    
+    
+    </div>
+  </form>
+</body>
+</html>

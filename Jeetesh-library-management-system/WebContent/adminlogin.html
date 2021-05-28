@@ -1,0 +1,171 @@
+<!DOCTYPE html> 
+<html> 
+<style> 
+   body{
+    margin: 0;
+    padding: 0;
+    background: url(admin2.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+.loginbox{
+    width: 320px;
+    height: 420px;
+    background: transparent;
+    color: #fff;
+    top: 60%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.loginbox button[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 250px;
+    background: blue;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+    text-align:center;
+}
+.loginbox button[type="submit"]:hover
+{
+    cursor: pointer;
+    background: blue;
+    color: black;
+}
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+.loginbox a:hover
+{
+    color: #ffc107;
+}
+
+
+.navbar {
+  overflow: hidden; /* Hide overflow */
+  background-color: #333; /* Dark background color */
+}
+/* Style the navigation bar links */
+.navbar a {
+  float: left; /* Make sure that the links stay side-by-side */
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 14px 20px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+}
+.navbar a.right {
+  float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+  background-color: #ddd; /* Grey background color */
+  color: black; /* Black text color */
+}
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 46px;
+  left: 20;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+
+</style> 
+  
+<body>
+<div class="sidenav">
+  <a href="Home.html" style="Font-Family:Algerian;">Librarian Login</a>
+</div>
+
+<!-- Navigation -->
+<nav class="navbar">
+  <a href="Homemain.html" class="w3-button w3-bar-item">Home</a>
+  <a href="About.html" class="w3-button w3-bar-item">About</a>
+  <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+  
+</nav>
+
+    <div class="loginbox">
+    <img src="adminlogo.gif" class="avatar">
+        <h1  style="Font-Family:Algerian; color:yellow;">Admin Login</h1>
+        <form action="Admin.jsp" class="container" method="post">
+            <p style="Font-Family:Kristen ITC;">Name</p>
+            <input type="text" placeholder="Admin_name" id="name" name="name" required>
+            <p style="Font-Family:Kristen ITC;">Password</p>
+            <input type="password"  placeholder="Enter Password" id="psw"name="psw" required>
+            <button type="submit" name="btn" style="Font-Family:Lucida Handwriting;"> Login</button>
+        </form>
+        
+    </div>
+
+</body>
+  
+</html> 

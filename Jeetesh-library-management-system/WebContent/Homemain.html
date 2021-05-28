@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ body {
+   The image used 
+  margin: 0;
+    padding: 0;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+
+
+.navbar {
+  overflow: hidden; /* Hide overflow */
+  background-color: #333; /* Dark background color */
+  position:fixed;
+}
+/* Style the navigation bar links */
+.navbar a {
+  float: left; /* Make sure that the links stay side-by-side */
+  display: block; /* Change the display to block, for responsive reasons (see below) */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 14px 20px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+}
+.navbar a.right {
+  float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+  background-color: #ddd; /* Grey background color */
+  color: black; /* Black text color */
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 55px;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+section{
+  position: fixed;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 500px;
+	height: 300px;
+	padding: 5px 40px;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+#myVideo {
+object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 55px;
+  left: 0;
+}
+}
+
+</style>
+</head>
+
+<body>
+<!-- Navigation -->
+<nav class="navbar">
+  <a href="#home" class="w3-button w3-bar-item">Home</a>
+  <a href="contact.html" class="w3-button w3-bar-item">Contact</a>
+  <a href="About.html" class="w3-button w3-bar-item">About</a>
+</nav>
+
+<video autoplay muted loop id="myVideo">
+  <source src="L1.mp4" type="video/mp4">
+</video>
+
+<section>
+			<div class="box">
+			<br><br>
+				<h1 style="text-align: center; margin:0px;  font-size: 35px; color:white; Font-Family:Algerian; ">Welcome to library</h1>
+				<br><br>
+				<h1 style="text-align: center; margin:0px;  font-size: 25px; color:white;">Opens at: 09:00 AM </h1><br>
+				<h1 style="text-align: center; margin:0px;  font-size: 25px; color:white;">Closes at: 04:00 PM </h1><br>
+			</div>
+	</section>
+<div class="sidenav">
+  <a href="Home.html" style="Font-Family:Algerian;">Librarian Login</a>
+  <a href="adminlogin.html" style="Font-Family:Algerian;">Admin Login</a>
+</div>
+
+</body>
+</html>
